@@ -1,3 +1,7 @@
+// Strings are text, written within double or single quotes:
+//JavaScript identifiers are case-sensitive.
+//Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names
+
 let var1 = "fifty"
 
 let var2 = Number(var1)

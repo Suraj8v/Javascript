@@ -10,3 +10,7 @@ const product = {
 const {description} = product;
 console.log(description)
 console.log(product.price)
+
+const array = [1,2]
+const [arrayFirstElement, arraySecondElement] = array;
+console.log(arrayFirstElement,arraySecondElement)

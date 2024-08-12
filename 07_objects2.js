@@ -3,9 +3,10 @@ const color = "red";
 
 const product = {
     description  : "dell laptop",
-    price,
+    price : 30000,
     color,
 }
 
 const {description} = product;
 console.log(description)
+console.log(product.price)

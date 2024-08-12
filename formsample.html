@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <body>
 <style>
     .input{
@@ -60,4 +61,68 @@
 </div>
 
     
+=======
+<body>
+<style>
+    .input{
+        border-radius: 3px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid rgb(225, 242, 247);
+        background-color: blanchedalmond;
+        box-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+    }
+    .divmain{
+        display: flex;
+        justify-content: center;
+    }
+    #btn{
+        box-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+        border: 1px solid rgb(225, 242, 247);
+        border-radius: 3px;
+        margin-left: 70px;
+    }
+</style>
+
+<script>
+    function validation()
+    {
+        const username = document.getElementById('username').value
+        const password = document.getElementById('password').value
+
+        //to clear previous msg
+        document.getElementById('username_span').innerHTML=""
+        document.getElementById('password_span').innerHTML=""
+        
+
+        if(username==='')
+        {
+            document.getElementById('username_span').innerHTML="*username required!"
+        }
+        if(password==='')
+        {
+            document.getElementById('password_span').innerHTML="*password required!"
+        }
+    }
+
+</script>
+<div class="divmain">
+    <form id="form">
+      
+        <input class="input"  type="text" placeholder="username" id="username" required>
+        <span id="username_span" style="color: red;"></span>
+        <br>
+        <br>
+        <input class="input" type="text" placeholder="password" id="password" required>
+        <span id="password_span" style="color: red;"></span>
+        <br>
+        <br>
+        <button id="btn" type="submit" onclick="validation()">
+            Sign up
+        </button>
+    </form>
+</div>
+
+    
+>>>>>>> 43c574ae815eef5eae61728b96524733afd43635
 </body>

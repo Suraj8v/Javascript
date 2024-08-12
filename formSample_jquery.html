@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -42,4 +43,50 @@
         </form>
 
        
+=======
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+          $('#btn').click(function() {
+    
+            const username = $('#username').val().trim();
+            const password = $('#password').val().trim();
+            
+            // clear previous error messages
+            $('#username_span').html('');
+            $('#password_span').html('');
+            
+            // Validate username
+            if (username === '') {
+              $('#username_span').html('*username required!');
+            }
+            
+            // Validate password
+            if (password === '') {
+              $('#password_span').html('*password required!');
+            }
+            
+          });
+        });
+      </script>
+    
+    
+        <form id="form">
+            <input type="text" placeholder="username" id="username" required>
+            <span id="username_span" style="color: red;"></span>
+            <br>
+            <input type="text" placeholder="password" id="password" required>
+            <span id="password_span" style="color: red;"></span>
+            <br>
+            <button id="btn" type="submit">
+                Sign up
+            </button>
+        </form>
+
+       
+>>>>>>> 43c574ae815eef5eae61728b96524733afd43635
     </body>

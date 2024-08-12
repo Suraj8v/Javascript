@@ -15,4 +15,5 @@ function displayResult(data)
 }
 
 
-setTimeout(summ,10000);
+setTimeout(summ,3000);
+console.log("Hello world")

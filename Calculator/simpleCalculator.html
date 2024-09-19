@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+
+    <script>
+        function validate(a,b)
+        {
+            if(a==="" || isNaN(a))
+        {
+            document.getElementById('input1').innerHTML="*please enter valid number"
+            alert("enter number")
+            return 0;
+        }
+        if(b=="" || isNaN(b))
+        {
+            document.getElementById('input2').innerHTML="*please enter valid number"
+            return 0;
+        }
+        document.getElementById('input1').innerHTML=""
+        document.getElementById('input2').innerHTML=""
+        return 1;
+
+        }
+
+      function add() {  
+        const num1 = parseInt(document.getElementById('num1').value);
+        const num2 = parseInt(document.getElementById('num2').value);
+        console.log(num1)
+
+        if(validate(num1,num2))
+      {
+        const ans = num1 + num2;
+        console.log("in add function");
+        document.getElementById("res").innerHTML = ans;
+      }
+   
+      }
+      
+      function sub() {  
+        const num1 = parseInt(document.getElementById('num1').value);
+        const num2 = parseInt(document.getElementById('num2').value);
+
+        if(validate(num1,num2))
+      {
+        const ans = num1 - num2;
+        console.log("in sub function");
+        document.getElementById("res").innerHTML = ans;
+      }   
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="num1" placeholder="Enter value" />
+      <span id="input1"></span>
+      <br />
+      <input type="number" id="num2" placeholder="Enter value" />
+      <span id="input2"></span>
+      <br />
+      <button type="submit" id="add" onclick="add()">Add</button>
+      <span></span>
+      <button type="submit" id="sub" onclick="sub()">Substract</button>
+      <br>
+      <span id="res"></span>
+    </div>
+  </body>
+</html>
